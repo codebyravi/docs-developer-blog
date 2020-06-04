@@ -1,8 +1,4 @@
+# Bundler configuration file [http://gembundler.com]
 source 'https://rubygems.org'
-
-gem 'jekyll'
-gem 'jekyll-assets'
-gem 'therubyracer'
-
-gem 'stringex'
-gem 'less'
+gem 'asciidoctor', '1.5.6.1'
+gem 'webpacker', '~> 4.2', '>= 4.2.2'

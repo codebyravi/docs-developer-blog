@@ -1,0 +1,52 @@
+languageCode = "en-us"
+title = "Developer Docs Blog"
+theme = "Developer-Docs-Theme"
+baseURL = "/"
+relativeURLs = true
+
+[params]
+    custom_css = [
+      "/css/developer_docs_style.css",
+      "https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    ]
+    maxBlogPosts   = 10
+
+[menu]
+  [[menu.main]]
+      identifier = "developer-home"
+      name = "Developer Home"
+      url = "/developer-home"
+      weight = 1
+  [[menu.main]]
+      identifier = "docs"
+      name = "Developer Documentation"
+      url = "/docs"
+      weight = 2
+  [[menu.main]]
+      identifier = "blogs"
+      name = "Blogs"
+      url="/"
+      weight = 3
+      [[menu.main]]
+          identifier = "blog"
+          name = "Technical Blog"
+          url = "/blogs/blog"
+          weight = 1
+          parent="blogs"
+      [[menu.main]]
+          identifier = "rackspace-blog"
+          name = "Rackspace Blog"
+          url = "https://www.rackspace.com/blog"
+          weight = 2
+          parent="blogs"
+      [[menu.main]]
+          identifier = "solve"
+          name = "Solve: Thought Leadership"
+          url = "https://www.rackspace.com/solve"
+          weight = 3
+          parent="blogs"
+  [[menu.main]]
+      identifier = "support-documentation"
+      name = "Support Documentation"
+      url = "https://support.rackspace.com/"
+      weight = 4
